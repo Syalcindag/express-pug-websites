@@ -1,0 +1,9 @@
+extends parent.pug
+block content
+  -var current = 'About'
+  include navigation
+     
+  block content
+    each line in text
+      p
+        |#{line}

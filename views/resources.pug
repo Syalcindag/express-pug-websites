@@ -1,0 +1,17 @@
+extends parent.pug
+block content
+  -var current = 'Resources'
+  include navigation
+  h1= message
+  
+  .list-group
+    a.list-group-item.disabled(href='#') Araç Kiralama Yerlerimiz
+    |  
+    a.list-group-item(href='https://www.rentalcars.com') RentalCars
+    |  
+    a.list-group-item(href='https://www.bluearackiralama.com/') Blue Araç Kiralama
+    |  
+    a.list-group-item(href='https://www.speedarackiralama.com/') Speed Araç Kiralama
+    
+
+  br

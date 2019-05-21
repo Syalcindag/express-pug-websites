@@ -1,0 +1,18 @@
+extends parent.pug
+block content
+  -var current = 'Home'
+  include navigation
+  h1(style=`font-size:50; color: red`)=header
+  
+  //include article
+
+  block content
+  div.container
+    each person in people
+      div.person
+        div.person-image(style=`background-image: url('../images/${person.imgSrc}'); background-size: cover;`)
+        h2.person-name
+          | #{person.firstname} 
+        
+
+  
